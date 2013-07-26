@@ -75,6 +75,14 @@ PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/config/sensor00_f11_sensor0.idc:system/usr/idc/sensor00_f11_sensor0.idc \
    $(LOCAL_PATH)/config/synaptics_rmi4_i2c.idc:system/usr/idc/synaptics_rmi4_i2c.idc
 
+      #XPEIENCE prebuilts
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/prebuilt/axperiau_ondemandax.ko:/system/lib/modules/axperiau_ondemandax.ko \
+$(LOCAL_PATH)/prebuilt/axperiau_pegasusq.ko:/system/lib/modules/axperiau_pegasusq.ko \
+$(LOCAL_PATH)/prebuilt/axperiau_sio_iosched.ko:/system/lib/modules/axperiau_sio_iosched.ko \
+$(LOCAL_PATH)/prebuilt/axperiau_smartass2.ko:/system/lib/modules/axperiau_smartass2.ko \
+$(LOCAL_PATH)/prebuilt/rng-core.ko:/system/lib/modules/rng-core.ko
+   
 # Misc configuration files
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/config/manuf_id.cfg:system/etc/AT/manuf_id.cfg \
